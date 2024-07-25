@@ -28,7 +28,7 @@ const Projects = ({ projects }) => {
 
       <div className="h-full ">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-10">
-          {currentProjects.map((project,ind) => (
+          {currentProjects.map((project, ind) => (
             <ProjectCard key={ind} project={project} />
           ))}
         </div>
@@ -41,7 +41,7 @@ const Projects = ({ projects }) => {
             <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
-              className="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
+              className="flex me-1 items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
             >
               <span className="sr-only">Previous</span>
               <svg
@@ -83,9 +83,9 @@ const Projects = ({ projects }) => {
             <button
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
+              className="ms-1 flex items-center justify-center px-3 h-8 text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 disabled:opacity-50"
             >
-              <span className="sr-only">Next</span>
+             
               <svg
                 className="w-2.5 h-2.5 rtl:rotate-180"
                 aria-hidden="true"

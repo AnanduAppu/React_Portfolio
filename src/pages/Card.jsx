@@ -11,9 +11,9 @@ function Card({ name, title, social: { github, email,linkedin } }) {
   };
   return (
     <div className="w-full ">
-      <div className="bg-white mt-0 " >
-        <div className="container mx-auto py-8 px-4 md:px-0 md:flex md:justify-center md:items-center">
-          <div className="md:w-1/2 lg:w-2/3 mt-8 md:mt-0 rounded-lg">
+      <div className="bg-white  " >
+        <div className="container mx-auto py-2 px-4 md:px-0 md:flex md:justify-center md:items-center">
+          <div className="md:w-1/2 lg:w-2/3 max-sm:mt-1 md:mt-0 rounded-lg">
             <img
               src={profile}
               alt="Responsive Design"
